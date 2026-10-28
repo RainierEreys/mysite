@@ -184,6 +184,28 @@ a:hover { text-decoration: underline; }
 .hero__meta a { color: var(--text-muted); }
 .hero__meta a:hover { color: var(--accent); text-decoration: none; }
 
+.hero__social {
+  display: flex;
+  gap: 0.9rem;
+  margin-top: 1.4rem;
+}
+.hero__social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text-muted);
+  transition: color 0.2s, border-color 0.2s, transform 0.15s;
+}
+.hero__social a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
@@ -382,10 +404,23 @@ a:hover { text-decoration: underline; }
 .footer {
   border-top: 1px solid var(--border);
   padding: 1.6rem 0;
-  text-align: center;
   color: var(--text-muted);
   font-size: 0.85rem;
 }
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.footer__social { display: flex; gap: 1rem; }
+.footer__social a {
+  color: var(--text-muted);
+  display: inline-flex;
+  transition: color 0.2s, transform 0.15s;
+}
+.footer__social a:hover { color: var(--accent); transform: translateY(-2px); }
 
 /* ===== Animación de aparición ===== */
 .reveal {
@@ -425,5 +460,6 @@ a:hover { text-decoration: underline; }
   }
   .hero__photo-wrapper { order: -1; justify-self: center; }
   .hero__summary { margin-inline: auto; }
-  .hero__meta, .hero__actions { justify-content: center; }
+  .hero__meta, .hero__actions, .hero__social { justify-content: center; }
+  .footer__inner { justify-content: center; text-align: center; }
 }
