@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de Rainier Erey Peña Bolívar — Desarrollador Backend especializado en APIs, automatización y microservicios." />
+  <title>Rainier Erey Peña Bolívar — Desarrollador Backend</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <!-- ===== Navegación ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#inicio" class="nav__logo">rai<span class="accent">.</span>dev</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#logros">Logros</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#educacion">Educación</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto" class="nav__cta">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__greeting">Hola, soy</p>
+          <h1 class="hero__name">Rainier Erey Peña Bolívar</h1>
+          <h2 class="hero__role">Desarrollador <span class="accent">Backend</span></h2>
+          <p class="hero__summary">
+            Ingeniero en Informática con experiencia en desarrollo backend, automatización de
+            flujos operativos y exposición segura de servicios. Especializado en el desarrollo
+            de APIs, enfocado en soluciones escalables y mantenibles.
+          </p>
+          <div class="hero__meta">
+            <span>📍 Caracas, Venezuela</span>
+            <a href="mailto:rainierereys242@gmail.com">✉️ rainierereys242@gmail.com</a>
+            <a href="tel:+584143196144">📞 (+58) 414-3196144</a>
+          </div>
+          <div class="hero__actions">
+            <a href="#contacto" class="btn btn--primary">Contáctame</a>
+            <a href="#experiencia" class="btn btn--ghost">Ver experiencia</a>
+            <a href="src/assets/Rainier_cv_2026.pdf" class="btn btn--ghost" download>Descargar CV</a>
+          </div>
+        </div>
+        <div class="hero__photo-wrapper">
+          <img src="src/assets/carnet.png" alt="Foto de Rainier Erey Peña Bolívar" class="hero__photo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Logros ===== -->
+    <section class="section" id="logros">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">01.</span> Logros destacados</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon">📡</div>
+            <h3>Protocolo TR-069</h3>
+            <p>
+              Integración del protocolo TR-069 para gestión remota de routers, automatizando
+              funciones como reseteo de ONU, cambio de contraseña Wi-Fi en ambos canales y
+              monitoreo de estado de las ONUs, con notificaciones proactivas ante fallas prolongadas.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🔐</div>
+            <h3>MinIO seguro y reproducible</h3>
+            <p>
+              Exposición segura y reproducible del servicio MinIO en entorno de desarrollo,
+              utilizando Apache sobre Ubuntu Server, con validación de headers y certificados SSL.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card__icon">⚙️</div>
+            <h3>Automatización con Celery</h3>
+            <p>
+              Automatización de tareas asincrónicas con Celery, desacoplando procesos críticos
+              como envío de notificaciones móviles y validación de estados operativos, mejorando
+              la trazabilidad y reduciendo la carga de un backend monolítico.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experiencia ===== -->
+    <section class="section section--alt" id="experiencia">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">02.</span> Experiencia</h2>
+
+        <div class="timeline">
+          <article class="job">
+            <div class="job__header">
+              <div>
+                <h3 class="job__role">Desarrollador Backend Jr.</h3>
+                <p class="job__company">Telecomunicaciones G-Network — La Guaira, VE</p>
+              </div>
+              <span class="job__period">Oct 2024 – Abr 2026</span>
+            </div>
+            <ul class="job__list">
+              <li>Desarrollo de APIs para generar reportes y métricas en el CRM empresarial G-OFFICE para los distintos fines de la empresa.</li>
+              <li>Optimización de consultas existentes para reducir tiempos de carga de data usando el ORM de Django.</li>
+              <li>Diseño y desarrollo de backend para auto-registro de clientes en la app móvil G-OFFICE, implementando envío de códigos OTP al celular del usuario para su correcta verificación.</li>
+              <li>Diseño y desarrollo de backend para generar, asignar y transferir tickets para el equipo de atención al cliente y soporte de fallas y averías en el CRM G-OFFICE.</li>
+              <li>Backend para gestión de routers mediante la app G-OFFICE, implementando la API de Made4Graph con protocolo TR-069: reseteo de ONU, cambio de contraseña Wi-Fi en ambos canales (2.4 GHz y 5 GHz) y verificación del estado de la ONU para notificaciones ante averías prolongadas.</li>
+              <li>Exposición segura del servicio MinIO en el entorno de desarrollo del CRM para almacenamiento de archivos, usando Apache sobre Ubuntu Server.</li>
+              <li>Backend para gestión y automatización de notificaciones móviles con fines de cobro y reporte de fallas y averías, reduciendo notoriamente los atrasos por pago de los clientes.</li>
+              <li>Backend para la aplicación <em>Agentes Locales</em> de G-Network, gestionando la labor de asesores de venta de campo con asignación de zonas de cobertura segmentadas en parroquias, sectores o cajas NAP.</li>
+              <li>Desarrollo de backend para CRM G-OFFICE V2, empleando testing y arquitectura basada en microservicios.</li>
+              <li>Implementación de la API de pasarela de pago MOVILPAY para habilitar métodos de pago Vpos y Débito Inmediato en la app G-OFFICE y en cajas de autopago.</li>
+              <li>Participación en la transición del backend de registro de clientes de un sistema monolítico a microservicios, aplicando patrones de Domain-Driven Design (DDD) para asegurar escalabilidad y desacoplamiento de la lógica de negocio.</li>
+              <li>Desarrollo de clientes de integración para sistemas antiguos, con lógica de reintentos (retry) y manejo de excepciones personalizadas para errores de negocio del backend tradicional.</li>
+              <li>Endpoints avanzados con FastAPI, usando Genéricos de Python y Pydantic V2 para estandarizar respuestas (StandardResponse, PaginatedResponse), mejorando la integridad de datos y la documentación automática con Swagger.</li>
+              <li>Soporte de cualquier tipo de bug en la aplicación móvil y el CRM de la empresa.</li>
+            </ul>
+            <div class="job__tags">
+              <span>Django</span><span>DRF</span><span>FastAPI</span><span>Celery</span>
+              <span>PostgreSQL</span><span>Docker</span><span>MinIO</span><span>TR-069</span><span>DDD</span>
+            </div>
+          </article>
+
+          <article class="job">
+            <div class="job__header">
+              <div>
+                <h3 class="job__role">Webmaster</h3>
+                <p class="job__company">Confecciones Yarnabeth — Caracas, VE</p>
+              </div>
+              <span class="job__period">Jun 2022 – Oct 2024</span>
+            </div>
+            <ul class="job__list">
+              <li>Diseño y desarrollo del sitio web de la empresa.</li>
+              <li>Desarrollo e implementación de catálogos web elaborados con FlipPDF mediante módulos Odoo.</li>
+              <li>Desarrollo de snippets para la página web mediante módulos Odoo.</li>
+              <li>Desarrollo de módulos para la implementación de campos en modelos de Odoo.</li>
+              <li>Gestión de inventario en el ERP Odoo.</li>
+              <li>Gestión de permisos de usuarios.</li>
+            </ul>
+            <div class="job__tags">
+              <span>Odoo</span><span>Python</span><span>XML</span><span>HTML/CSS</span>
+            </div>
+            <div class="job__refs">
+              <span>Referencias:</span>
+              <a href="https://yarnabeth.com" target="_blank" rel="noopener">yarnabeth.com</a>
+              <a href="https://matsumotoparts.com" target="_blank" rel="noopener">matsumotoparts.com</a>
+              <a href="https://yarnabeth.cl" target="_blank" rel="noopener">yarnabeth.cl</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Educación ===== -->
+    <section class="section" id="educacion">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">03.</span> Educación</h2>
+        <div class="cards cards--two">
+          <article class="card">
+            <div class="card__icon">🎓</div>
+            <h3>Ingeniería Informática</h3>
+            <p class="card__meta">Universidad Marítima del Caribe — La Guaira, VE</p>
+            <p>2018 – 2024 · Graduado</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">📚</div>
+            <h3>Bachiller en Ciencias</h3>
+            <p class="card__meta">Dulce Nombre de Jesús — Caracas, VE</p>
+            <p>Jun 2017 · Graduado</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Habilidades ===== -->
+    <section class="section section--alt" id="habilidades">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">04.</span> Habilidades</h2>
+        <div class="skills">
+          <div class="skills__group">
+            <h3>Lenguajes y Frameworks</h3>
+            <div class="skills__tags">
+              <span>Python</span><span>Django</span><span>Django REST Framework</span>
+              <span>FastAPI</span><span>Odoo Framework</span><span>HTML</span>
+              <span>XML</span><span>CSS</span><span>Bootstrap</span>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3>Bases de Datos</h3>
+            <div class="skills__tags">
+              <span>PostgreSQL</span><span>MySQL</span><span>SQLAlchemy</span>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3>Testing</h3>
+            <div class="skills__tags"><span>Pytest</span></div>
+          </div>
+          <div class="skills__group">
+            <h3>DevOps y Contenedores</h3>
+            <div class="skills__tags">
+              <span>Docker</span><span>Linux</span><span>Git</span>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3>Seguridad y Exposición de Servicios</h3>
+            <div class="skills__tags">
+              <span>Apache</span><span>MinIO</span><span>SSL</span>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3>Automatización</h3>
+            <div class="skills__tags"><span>Celery</span></div>
+          </div>
+          <div class="skills__group">
+            <h3>Idiomas</h3>
+            <div class="skills__tags">
+              <span>Español (Nativo)</span><span>Inglés (Lectura y Escritura)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contacto ===== -->
+    <section class="section section--contact" id="contacto">
+      <div class="container contact">
+        <h2 class="section__title"><span class="section__num">05.</span> Contacto</h2>
+        <p class="contact__text">
+          ¿Tienes un proyecto en mente o quieres conversar sobre desarrollo backend?
+          Estoy disponible para nuevas oportunidades.
+        </p>
+        <div class="contact__links">
+          <a href="mailto:rainierereys242@gmail.com" class="btn btn--primary">✉️ rainierereys242@gmail.com</a>
+          <a href="tel:+584143196144" class="btn btn--ghost">📞 (+58) 414-3196144</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Rainier Erey Peña Bolívar — Desarrollador Backend</p>
+    </div>
+  </footer>
+
+  <script src="src/script.js"></script>
+</body>
+</html>
